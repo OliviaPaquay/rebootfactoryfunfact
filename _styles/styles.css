@@ -1,0 +1,43 @@
+body {
+ 	font-family: sans-serif;
+}
+
+header {
+	text-align: center;
+	border-bottom: solid 1px #282828;
+}
+
+.home {
+	height: 30px;
+	width: 30px;
+	background: grey;
+	position: fixed;
+	top: 4%;
+	left: 8%;
+}
+
+nav ul {
+	 list-style: none;
+	 padding: 0;
+	 margin: 0;
+}
+
+.nav {
+	text-align: center;
+	padding: 0;
+	margin: 20px 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #282828;
+}
+
+nav ul a {
+	border-bottom: solid 1px #282828;
+	padding: 30px;
+	display: inline-block;
+	width: 100%
+}
+
