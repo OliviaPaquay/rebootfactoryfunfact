@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+	<head>
+
+		<title>FunFact</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="initial-scale=1.0" />
+
+		<link rel="stylesheet" href="_styles/styles.css" />
+
+	</head>
+
+
+	
+	<body>
+			<header>
+				<h1 class="head">Funfact</h1>
+			</header>
+
+			<main>
+				<nav class="section__nav">
+					<button class="btn--openmenu">Menu</button>
+					<!-- CONTENU MENU -->
+				</nav>
+
+					<button class="btn--openfilter">Filtres</button>
+					<!-- CONTENU FILTRE -->
+				
+
+				<section id="home" class="section section__home">
+					<p class="fact">En Alabama, il est interdit de jouer aux dominos le dimanche.</p>
+					<ul>
+						<li><a href="#">user</a></li>
+						<li><a href="#">source</a></li>
+					</ul>
+
+					<ul class="tapbar">
+						<li><button><img src="#" alt="+" /><p>Add Fact</p></button></li>
+						<li><button><img src="#" alt="star" /><p>Add Fav</p></button></li>
+						<li><button><img src="#" alt="share" /><p>Share</p></button></li>
+					</ul>
+				</section>
+				<section id="profil" class="section section__profil">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+				<section id="fav" class="section section__fav">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+
+				<script>
+					var 
+						openMenu = document.getElementsByClassName("btn--openmenu")[0],
+						nav = document.getElementsByClassName("section__nav")[0],
+						menuEl = document.getElementsByClassName("nav__el");
+
+					openMenu.addEventListener("click", function() {
+						nav.classList.toggle("nav--open");
+						nav.classList.add("nav--transition");
+					});
+
+					nav.addEventListener("transitionend", function() {
+						nav.classList.remove("nav--transition");
+					});
+
+					for(var i=0; i<menuEl.length; i++) {
+						menuEl[i].addEventListener("click", function (){
+							nav.classList.add("nav--transition");
+							nav.classList.remove("nav--open");
+						});
+					}
+					
+				</script>
+			</main>
+
+			<footer>
+				
+			</footer>
+
+	</body>
+
+</html>
