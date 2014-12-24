@@ -12,7 +12,7 @@ form {
 
 .profile {
 	margin: 0 auto;
-	border-spacing: 5px;
+	text-align: center;
 
 	img {
 		width: 20px;
@@ -28,14 +28,6 @@ form {
 			left: 0;
 			top: 10px;
 		}
-	}
-
-	.cancel {
-		margin-right: 10px;
-	}
-
-	.confirm {
-		margin-left: 10px;
 	}
 }
 
