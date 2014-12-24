@@ -1,27 +1,41 @@
 form {
-	input, textarea {
+	input, textarea, button {
 		border: none;
-		border-left: 3px black solid;
-
 		padding: 5px;
+		box-sizing: border-box;
 	}
 
-	button {
-		border: none;
+	input, textarea {
+		border-left: 3px black solid;
 	}
 }
 
 .profile {
-	display: table;
-	border-collapse: separate;
+	margin: 0 auto;
 	border-spacing: 5px;
 
-	div {
-		display: table-row;
+	img {
+		width: 20px;
+		height: 20px;
+	}
 
-		label {
-			display: table-cell;
+	div {
+		position: relative;
+		padding-left: 25px;
+
+		img {
+			position: absolute;
+			left: 0;
+			top: 10px;
 		}
+	}
+
+	.cancel {
+		margin-right: 10px;
+	}
+
+	.confirm {
+		margin-left: 10px;
 	}
 }
 

@@ -1,19 +1,28 @@
 /* this file is preprocessed and automatically prefixed, the real source code is located at profile.css */
-form input, form textarea {
+form input, form textarea, form button {
   border: none;
-  border-left: 3px black solid;
-  padding: 5px; }
-form button {
-  border: none; }
+  padding: 5px;
+  box-sizing: border-box; }
+form input, form textarea {
+  border-left: 3px black solid; }
 
 .profile {
-  display: table;
-  border-collapse: separate;
+  margin: 0 auto;
   border-spacing: 5px; }
+  .profile img {
+    width: 20px;
+    height: 20px; }
   .profile div {
-    display: table-row; }
-    .profile div label {
-      display: table-cell; }
+    position: relative;
+    padding-left: 25px; }
+    .profile div img {
+      position: absolute;
+      left: 0;
+      top: 10px; }
+  .profile .cancel {
+    margin-right: 10px; }
+  .profile .confirm {
+    margin-left: 10px; }
 
 .floatlabel {
   position: relative; }
