@@ -8,16 +8,23 @@ body {
 header {
 	width: 100%;
 	text-align: center;
+	background: #b7b7b7;
 	border-bottom: solid 2px #282828;
 }
 
+header h1 {
+	margin: 0;
+	font-size: 1em;
+	padding: 30px;
+}
+
 .home {
-	height: 30px;
-	width: 30px;
+	height: 100px;
+	width: 100px;
 	background: grey;
 	position: fixed;
-	top: 4%;
-	left: 8%;
+	top: 20px;
+	left: 60px;
 }
 
 nav ul {
@@ -27,9 +34,7 @@ nav ul {
 }
 
 .nav {
-	text-align: center;
 	padding: 0;
-	margin: 20px 0;
 	list-style: none;
 }
 
@@ -39,11 +44,14 @@ a {
 }
 
 nav ul a {
-	border-bottom: solid 2px #282828;
-	padding: 30px;
+	padding: 50px;
 	box-sizing: border-box;
 	display: inline-block;
 	width: 100%;
 	font-variant: small-caps;
 }
 
+nav ul li {
+	padding-left: 100px;
+	border-bottom: solid 2px #282828;
+}
