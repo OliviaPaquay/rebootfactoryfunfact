@@ -1,11 +1,15 @@
 /* this file is preprocessed and automatically prefixed, the real source code is located at profile.css */
-form input {
+form input, form textarea {
   border: none;
   border-left: 3px black solid;
   padding: 5px; }
+form button {
+  border: none; }
 
 .profile {
-  display: table; }
+  display: table;
+  border-collapse: separate;
+  border-spacing: 5px; }
   .profile div {
     display: table-row; }
     .profile div label {

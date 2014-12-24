@@ -1,14 +1,20 @@
 form {
-	input {
+	input, textarea {
 		border: none;
 		border-left: 3px black solid;
 
 		padding: 5px;
 	}
+
+	button {
+		border: none;
+	}
 }
 
 .profile {
 	display: table;
+	border-collapse: separate;
+	border-spacing: 5px;
 
 	div {
 		display: table-row;
