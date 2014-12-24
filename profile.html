@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link href="css/profile.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+	<form class="profile">
+		<div class="floatlabel">
+			<label for="profile_email">Email</label>
+			<input type="email" name="email" id="profile_email">
+		</div>
+
+		<div class="floatlabel">
+			<label for="profile_username">Pseudo</label>
+			<input type="text" name="username" id="profile_username">
+		</div>
+		<!----------->
+		<div class="floatlabel">
+			<label for="profile_password_new">Nouveau mot de passe</label>
+			<input type="password" name="password_new" id="profile_password_new">
+		</div>
+
+		<div class="floatlabel">
+			<label for="profile_password_conf">Confirmation</label>
+			<input type="password" name="password_conf" id="profile_password_conf">
+		</div>
+
+		<div class="floatlabel">
+			<label for="profile_password_old">Mot de passe actuel</label>
+			<input type="password" name="password_old" id="profile_password_old">
+		</div>
+		<!----------->
+		<div>
+			<a href="">Annuler</a>
+			<button type="submit">Confirmer</button>
+		</div>
+	</form>
+
+	<script type="text/javascript">
+		(function() {
+			"use strict";
+
+			var floatlabels = document.getElementsByClassName("floatlabel");
+
+			for (var i = 0; i < floatlabels.length; i++) {
+				var input = floatlabels[i].getElementsByTagName("input")[0];
+				var label = floatlabels[i].getElementsByTagName("label")[0];
+
+				input.placeholder = label.innerText;
+
+				input.addEventListener("input", function(e) {
+					var label = this.previousElementSibling;
+
+					if (this.value.length != 0)
+						label.classList.add("visible");
+					else
+						label.classList.remove("visible");
+				});
+			}
+		})();
+	</script>
+</body>
+</html>

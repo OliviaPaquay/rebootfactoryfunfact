@@ -1,0 +1,27 @@
+/* this file is preprocessed and automatically prefixed, the real source code is located at profile.css */
+form input {
+  border: none;
+  border-left: 3px black solid;
+  padding: 5px; }
+
+.profile {
+  display: table; }
+  .profile div {
+    display: table-row; }
+    .profile div label {
+      display: table-cell; }
+
+.floatlabel {
+  position: relative; }
+  .floatlabel label {
+    position: absolute;
+    font-size: 11px;
+    -webkit-transition: margin-left 0.5s, color 0.5s;
+            transition: margin-left 0.5s, color 0.5s; }
+    .floatlabel label:not(.visible) {
+      color: transparent;
+      margin-left: -5px; }
+    .floatlabel label.visible {
+      margin-left: 5px; }
+  .floatlabel input {
+    margin-top: 12px; }

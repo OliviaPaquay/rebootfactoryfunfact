@@ -1,0 +1,43 @@
+form {
+	input {
+		border: none;
+		border-left: 3px black solid;
+
+		padding: 5px;
+	}
+}
+
+.profile {
+	display: table;
+
+	div {
+		display: table-row;
+
+		label {
+			display: table-cell;
+		}
+	}
+}
+
+.floatlabel {
+	position: relative;
+
+	label {
+		position: absolute;
+		font-size: 11px;
+		transition: margin-left 0.5s, color 0.5s;
+
+		&:not(.visible) {
+			color: transparent;
+			margin-left: -5px;
+		}
+
+		&.visible {
+			margin-left: 5px;
+		}
+	}
+
+	input {
+		margin-top: 12px;
+	}
+}
