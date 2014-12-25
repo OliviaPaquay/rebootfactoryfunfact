@@ -81,7 +81,7 @@ header  {
 		border: none;
 	}
 
-.section__fact {
+.article__fact {
 	padding: 20px 0;
 	border-bottom: solid 1px #b7b7b7;
 
@@ -92,7 +92,7 @@ header  {
 	position: relative;
 }
 
-.section__fact .options {
+.article__fact .options {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -128,11 +128,11 @@ header  {
 	margin: 0 auto;
 }
 
-.section__fact ul {
+.article__fact ul {
 	width: 80%;
 	margin: 0 auto;	
 }
 
-.section__fact ul li {
+.article__fact ul li {
 	display: inline-block;
 }
