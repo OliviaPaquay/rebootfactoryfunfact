@@ -1,21 +1,24 @@
 /* this file is preprocessed and automatically prefixed, the real source code is located at profile.css */
 body {
-  font-family: sans-serif;
   margin: 0;
-  padding: 0;
-}
+  font-family: sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 form input, form textarea, form button {
-  border: none;
-  padding: 5px;
-  box-sizing: border-box; }
+  border: none; }
+form button {
+  padding: 15px; }
 form input, form textarea {
-  border-left: 3px black solid; }
+  border: 1px #dddddd solid;
+  padding: 8px; }
 
 .profile {
   margin: 0 auto;
-  width: 200px; 
-  text-align: center; }
+  text-align: center;
+  width: 210px; }
   .profile img {
     width: 20px;
     height: 20px; }
@@ -25,7 +28,11 @@ form input, form textarea {
     .profile div img {
       position: absolute;
       left: 0;
-      top: 10px; }
+      top: 20px; }
+  .profile .confirm, .profile .cancel {
+    margin-top: 20px; }
+  .profile .confirm {
+    margin-left: 40px; }
 
 .floatlabel {
   position: relative; }
@@ -33,11 +40,12 @@ form input, form textarea {
     position: absolute;
     font-size: 11px;
     -webkit-transition: margin-left 0.5s, color 0.5s;
-            transition: margin-left 0.5s, color 0.5s; }
+            transition: margin-left 0.5s, color 0.5s;
+    top: 6px; }
     .floatlabel label:not(.visible) {
       color: transparent;
       margin-left: -5px; }
     .floatlabel label.visible {
       margin-left: 5px; }
   .floatlabel input {
-    margin-top: 12px; }
+    margin-top: 20px; }

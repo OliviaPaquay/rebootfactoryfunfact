@@ -1,18 +1,32 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
 form {
 	input, textarea, button {
 		border: none;
-		padding: 5px;
-		box-sizing: border-box;
+	}
+
+	button {
+		padding: 15px;
 	}
 
 	input, textarea {
-		border-left: 3px black solid;
+		border: 1px #dddddd solid;
+		padding: 8px;
 	}
 }
 
 .profile {
 	margin: 0 auto;
 	text-align: center;
+	width: 210px;
 
 	img {
 		width: 20px;
@@ -26,8 +40,16 @@ form {
 		img {
 			position: absolute;
 			left: 0;
-			top: 10px;
+			top: 20px;
 		}
+	}
+
+	.confirm, .cancel {
+		margin-top: 20px;
+	}
+
+	.confirm {
+		margin-left: 40px;
 	}
 }
 
@@ -38,6 +60,7 @@ form {
 		position: absolute;
 		font-size: 11px;
 		transition: margin-left 0.5s, color 0.5s;
+		top: 6px;
 
 		&:not(.visible) {
 			color: transparent;
@@ -50,6 +73,6 @@ form {
 	}
 
 	input {
-		margin-top: 12px;
+		margin-top: 20px;
 	}
 }
