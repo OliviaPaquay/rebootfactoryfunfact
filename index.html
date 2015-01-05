@@ -101,23 +101,30 @@
 		(function() {
 			"use strict";
 
-			var openMenu = document.getElementsByClassName("btn--openmenu")[0],
+			var 
+				openMenu = document.getElementsByClassName("btn--openmenu")[0],
 				nav = document.getElementsByClassName("section__nav")[0],
-				menuEl = document.querySelectorAll(".nav li a");
+				menuEl = document.getElementsByClassName("nav__el"),
+				secHome = document.getElementsByClassName("section__home")[0]; 
 
 			openMenu.addEventListener("click", function() {
 				nav.classList.toggle("nav--open");
 				nav.classList.add("nav--transition");
+				secHome.classList.toggle("sec--closed"); 
+				secHome.classList.add("sec--transition"); 
 			});
 
 			nav.addEventListener("transitionend", function() {
 				nav.classList.remove("nav--transition");
+				secHome.classList.remove("sec--transition"); 
 			});
 
-			for (var i=0; i<menuEl.length; i++) {
-				menuEl[i].addEventListener("click", function() {
+			for(var i=0; i<menuEl.length; i++) {
+				menuEl[i].addEventListener("click", function (){
 					nav.classList.add("nav--transition");
 					nav.classList.remove("nav--open");
+					secHome.classList.add("sec--transition"); 
+					secHome.classList.remove("sec--closed"); 
 				});
 			}
 		})();
